@@ -1,0 +1,23 @@
+class Solution:
+    def mergeAlternately(self, word1, word2):
+        w1= len(word1)
+        w2= len(word2)
+        n=0
+        m=0
+        merged=[]
+
+        while n<w1 or m<w2:
+            if n<w1:
+                merged+=word1[n]
+                n+=1
+            if m<w2:
+                merged+=word2[m]
+                m+=1
+
+        return  "".join(merged)
+
+
+## Was for the question: Merge Strings Alternativelty
+## Level: Easy
+## Solve time: 2 Minutes something seconds
+## Using Pyhton3
