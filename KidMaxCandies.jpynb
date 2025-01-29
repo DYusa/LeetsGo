@@ -1,0 +1,8 @@
+"""
+The solution for the question: Kids with the greatest number of candies. 
+This solution's implementation raises awareness on how such lenghty question can have a non-lenghty answer
+"""
+class Solution:
+ def kidsWithCandies(self, candies, extraCandies):
+        max_candies = max(candies)  # Find the maximum candies any kid currently has
+        return [(candy + extraCandies) >= max_candies for candy in candies]  
