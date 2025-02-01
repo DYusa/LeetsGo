@@ -1,0 +1,12 @@
+def gradingStudents(grades):
+    result=[]
+    for i in grades:
+        if i>=35:
+            next_multiple_of_5 = ((int(i)// 5 + 1) * 5)
+            if next_multiple_of_5-i<3:
+                result.append(next_multiple_of_5)
+            else:
+                result.append(i)
+        else:
+            result.append(i)
+    return result
