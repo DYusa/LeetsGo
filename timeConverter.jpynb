@@ -1,0 +1,15 @@
+ #+12 
+    #if >23then 0
+    if "PM" in s:
+        timeM= s[0:2]
+        timeM=int(timeM)
+        timeM+=12
+        if timeM > 23:
+            s = "00"+ s[2:]
+            s=s.pop()
+            s=s.pop()
+        else:
+            s = timeM+ s[2:]
+            s=s.pop()
+            s=s.pop()    
+
